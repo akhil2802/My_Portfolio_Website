@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a
+      href="https://api.whatsapp.com/send?phone=8073955975&text=Hello%20there!"
+      class="whatsapp-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    
+    
+    <app-header></app-header>
+    <div></div>
+    <app-homebanner></app-homebanner>
+    <app-dashboard></app-dashboard>
+    <div style="margin: 100px"></div>
+    <app-main></app-main>
+    <app-roles></app-roles>
+    <div class="container" style="margin-top: 100px; text-indent: 50px">
+      <legend>Lorem</legend>
+      dolor sit amet consectetur adipisicing elit. Voluptatum molestiae quos
+      iure similique ex repellat autem non fugiat provident esse tempora
+      voluptates rem eum, atque, assumenda vel minus, quo quae distinctio eos
+      facere expedita ab porro maxime. Modi qui voluptas perferendis hic. Nam
+      consectetur debitis aut perspiciatis asperiores mollitia quod, veniam
+      fugit explicabo at adipisci quis cum vel repellat, perferendis voluptatem
+      voluptate laborum! Veniam pariatur maxime quaerat ipsam voluptatibus,
+      voluptatum, aliquid inventore, corporis porro illo nostrum. Maxime est
+      omnis quasi. Quas nihil iste neque enim beatae maxime quo magnam optio
+      nulla a maiores, ipsam facilis dicta corporis reiciendis, similique aut.
+      Rem nobis exercitationem ab sit modi dicta magnam architecto voluptates
+      non nisi, explicabo, dolores quod facilis debitis. Totam architecto
+      dolorem inventore explicabo pariatur natus hic molestias voluptate, qui
+      perferendis ullam expedita repudiandae iure mollitia commodi nulla quasi
+      excepturi? Ipsum animi, voluptas ipsa aliquid rem numquam nisi alias
+      obcaecati similique magnam tempore doloremque facilis eveniet pariatur
+      expedita iusto sunt perferendis. Id repudiandae cum harum eius nihil
+      inventore quia iste, dicta deleniti, quod ut et sit ducimus quisquam,
+      doloribus aut alias doloremque placeat repellendus. Explicabo, accusamus
+      quod vero facere, minima, sit tenetur quis placeat quos voluptate pariatur
+      sunt. Earum et magni qui?
+    </div>
+    <app-project></app-project>
+    <app-timeline></app-timeline>
+    <app-testimonials></app-testimonials>
+    <app-endorse></app-endorse>
+    <app-contact-email></app-contact-email>
+    <app-footer></app-footer>
+
+    <!-- video resume scripts -->
+    <script src="node_modules\lazysizes\lazysizes.min.js" async></script>
+    <!-- tech: -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var slideContainer = document.querySelector(".mdb-logotypes .row");
+      var slideItem = document.querySelectorAll(".mdb-logotypes .col-lg-1");
+      var slideIndex = 0;
+
+      function slideNext() {
+        slideIndex++;
+        slideContainer.style.transform = `translateX(-${slideIndex * 33.33}%)`;
+      }
+
+      setInterval(slideNext, 3000);
+    });
+  </script>
+  </body>
+</html>

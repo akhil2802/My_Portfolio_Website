@@ -1,0 +1,30 @@
+body {
+    // background: rgba(238, 248, 248, 0.652);
+    background: #f1f1f1;
+}
+
+// whatsapp:
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: darkgreen;
+}
+
+.whatsapp-icon i {
+  pointer-events: none;
+}

@@ -1,0 +1,114 @@
+footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.additional-contents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-contents li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.additional-contents a {
+  color: #333;
+  text-decoration: none;
+}
+
+.additional-contents a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  margin-bottom: 30px;
+}
+
+.newsletter h3 {
+  margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  margin-top: 30px;
+  color: #777;
+}
+
+// Social Icons: 
+.social-icons a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #3b5998; /* Facebook Blue */
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px); /* Move the icon 5 pixels up on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+.social-icons a:nth-child(1) {
+  color: #1877F2; /* Facebook Blue */
+}
+
+.social-icons a:nth-child(2) {
+  color: #1DA1F2; /* Twitter Blue */
+}
+
+.social-icons a:nth-child(3) {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons a:nth-child(4) {
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

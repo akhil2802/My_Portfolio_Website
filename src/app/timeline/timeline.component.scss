@@ -1,0 +1,344 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	height: 0%;
+}
+
+// @font-face {
+// 	font-family: 'Times New Roman', Times, serif;
+// 	// src: url();
+// }
+.main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+//   background-color: #273c52;
+background-color: rgb(35, 76, 109);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 0;
+  border-radius: 10px;
+  margin: 0 5px;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.main:hover {
+	.head {
+		color: #1b1c1c;
+	}
+
+	.head i {
+		color: #1b1c1c;
+	}
+
+  background-color: #f78278;
+  box-shadow: 0 0 12px rgba(24, 33, 37, 0.7);
+  transform: scale(1.02) rotateX(5deg) rotateY(5deg);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+.main:hover::before,
+.main:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.main .head {
+  font-size: 29px;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 2px #63f36a, 5px 5px 12px #69a0e7, 1px 1px 2px #12304f;
+  position: relative;
+  margin-bottom: 100px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.main .head span {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #fff;
+  color: #3b71ca;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .head span:hover {
+  background: #3b71ca;
+  color: #fff;
+}
+
+.main .head:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #3b71ca;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .main .head {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  .main .head::before {
+    display: none;
+  }
+
+  .main .head:after {
+    display: none;
+  }
+}
+
+.main .head::after {
+	content: " ";
+	position: absolute;
+	width: 15rem;
+	height: 3px;
+	left: 50%;
+	bottom: -10px;
+	transform: translateX(-50%);
+	// background-image: linear-gradient(to right, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
+    background-image: linear-gradient(to right, #61ca3b, rgba(0, 195, 255, 0.9254901961));
+}
+
+// Icon:
+
+
+    // .head {
+    //   font-size: 24px;
+    //   color: #3b71ca;
+    //   margin-bottom: 20px;
+    //   position: relative;
+    //   cursor: pointer;
+    // }
+
+    .head i {
+      color: #f1f1f1;
+      margin-right: 5px;
+      font-size: 28px;
+      transition: color 0.3s ease;
+    }
+
+    .head:hover i {
+      color: #1b1c1c;
+	  text-shadow: none;
+	  animation: none;
+    }
+
+    .icon-spin {
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+// linear-gradient(to right, #374ae5d9, #00c3ffb5);
+
+/* Container Css Start  */
+
+.container {
+	width: 70%;
+	height: auto;
+	margin: auto 0;
+	position: relative;
+}
+.container ul {
+	list-style: none;
+}
+.container ul::after {
+	content: " ";
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	background-image: linear-gradient(to bottom, #374ae5d9, #00c3ffb5);
+}
+.container ul li {
+	width: 50%;
+	height: auto;
+	padding: 15px 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
+	position: relative;
+	margin-bottom: 30px;
+	z-index: 99;
+}
+.container ul li:nth-child(4) {
+	margin-bottom: 0;
+}
+.container ul li .circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #00c3ffb5;
+	top: 0;
+	display: grid;
+	place-items: center;
+}
+.circle::after{
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	background-color: #374ae5d9;
+	border-radius: 50%;
+}
+ul li:nth-child(odd) .circle {
+	transform: translate(50%, -50%);
+	right: -30px;
+}
+ul li:nth-child(even) .circle {
+	transform: translate(-50%, -50%);
+	left: -30px;
+}
+ul li .date {
+	position: absolute;
+	width: 130px;
+	height: 33px;
+	background-image: linear-gradient(to top, #480d4d, rgba(0, 195, 255, 0.88));
+	border-radius: 15px;
+	top: -45px;
+	display: grid;
+	place-items: center;
+	color: #fff;
+	font-size: 13px;
+	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
+}
+.container ul li:nth-child(odd) {
+	float: left;
+	clear: right;
+	text-align: right;
+	transform: translateX(-30px);
+}
+ul li:nth-child(odd) .date {
+	right: 20px;
+}
+.container ul li:nth-child(even) {
+	float: right;
+	clear: left;
+	transform: translateX(30px);
+}
+ul li .heading {
+	font-size: 17px;
+	color: #3b71ca;
+}
+ul li p {
+	font-size: 13px;
+	color: #666;
+	line-height: 18px;
+	margin: 6px 0 4px 0;
+}
+ul li a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #3b71ca;
+	transition: all 0.3s ease;
+}
+
+
+@media only screen and (min-width:798px) and (max-width: 1100px) {
+	.container{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 798px) {
+	.container{
+		width: 70%;
+		transform: translateX(20px);
+	}
+	.container ul::after{
+		left: -40px;
+	}
+	.container ul li {
+		width: 100%;
+		float: none;
+		clear: none;
+		margin-bottom: 80px;
+	}
+	.container ul li .circle{
+		left: -40px;
+		transform: translate(-50%, -50%);
+	}
+	.container ul li .date{
+		left: 20px;
+	}
+	.container ul li:nth-child(odd) {
+		transform: translateX(0px);
+		text-align: left;
+	}
+	.container ul li:nth-child(even) {
+		transform: translateX(0px);
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.container{
+		width: 80%;
+	}
+	.container ul::after{
+		left: -20px;
+	}
+	.container ul li .circle{
+		left: -20px;
+	}
+}
+

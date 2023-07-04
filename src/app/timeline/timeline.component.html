@@ -1,0 +1,152 @@
+<head>
+  <title>Timeline</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+
+  <!-- Modal Styles: -->
+  <style>
+    /* Add your custom CSS styles here */
+
+    /* Modal */
+    .modal-content {
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-header {
+      background-color: #18427d;
+      color: #fff;
+      border-bottom: none;
+    }
+
+    .modal-title {
+      font-weight: bold;
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .modal-footer {
+      border-top: none;
+    }
+
+    .close {
+      color: #fff;
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .close:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Icon Animation: -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script>
+    function lazyLoadIcon(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("lazy-load");
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    const iconObserver = new IntersectionObserver(lazyLoadIcon, {
+      threshold: 0.1,
+    });
+    const lazyLoadIcons = document.querySelectorAll(".lazy-load");
+
+    lazyLoadIcons.forEach((icon) => {
+      iconObserver.observe(icon);
+    });
+
+    window.addEventListener("scroll", function () {
+      var icon = document.querySelector(".head i");
+      var iconPosition = icon.getBoundingClientRect().top;
+      var screenPosition = window.innerHeight / 2;
+
+      if (iconPosition < screenPosition) {
+        icon.classList.add("icon-spin");
+      } else {
+        icon.classList.remove("icon-spin");
+      }
+    });
+  </script>
+</body>
+
+<div class="main">
+  <h3 class="head">
+    <i class="fas fa-history lazy-load icon-spin"></i> Scholastic and
+    Professional Journey
+  </h3>
+  <div class="container">
+    <ul>
+      <li>
+        <h3 class="heading">Graduation</h3>
+        <p>
+          I am privileged to have completed my education at NIE Institute of
+          Technology, affiliated to VTU, with a stellar academic performance,
+          graduating with First Class honors.
+        </p>
+        <a href="#" data-toggle="modal" data-target="#detailsModal"
+          >Read More >></a
+        >
+        <span class="date">July 2018</span>
+        <span class="circle"></span>
+      </li>
+
+      <li>
+        <h3 class="heading">FrontEnd Development</h3>
+        <p>
+          During my career journey as a frontend developer, I have demonstrated
+          my expertise and dedication by consistently delivering high-quality
+          projects and exceeding client expectations. I have continuously honed
+          my skills through self-learning and keeping up with the latest
+          industry trends.
+        </p>
+        <a href="#">Read More >></a>
+        <span class="date">January 2021</span>
+        <span class="circle"></span>
+      </li>
+      <li>
+        <h3 class="heading">BackEnd Development</h3>
+        <p>
+          In my backend journey with Java Spring Boot, I have honed my skills in
+          building robust and scalable applications. From designing RESTful APIs
+          to integrating databases and external services, I have gained hands-on
+          experience in creating high-performance systems. My expertise includes
+          dependency injection, ORM frameworks, and implementing robust spring
+          security measures along with spring cloud microservices integration.
+        </p>
+        <a href="#">Read More >></a>
+        <span class="date">February 2021</span>
+        <span class="circle"></span>
+      </li>
+      <li>
+        <h3 class="heading">Full Stack Development with DevOps</h3>
+        <p>
+          As a skilled full-stack developer, proficient in frontend frameworks
+          like Angular, as well as backend technologies such as Java Spring
+          Boot. I also have expertise in developing efficient test automation
+          frameworks using Selenium, including the implementation of Page Object
+          Model (POM) and hybrid frameworks and some DevOps practices, including
+          CI/CD, Docker, and cloud platforms like AWS. With my versatile skill
+          set, I ensure seamless end-to-end application development and
+          deployment processes.
+        </p>
+        <a href="#">Read More >></a>
+        <span class="date">March 2021</span>
+        <span class="circle"></span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
