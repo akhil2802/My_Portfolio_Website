@@ -1,5 +1,6 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+
 .mdb-logotypes {
   overflow: hidden;
   position: relative;
@@ -84,20 +85,6 @@
 }
 
 
-    // .mat-expansion-panel {
-    //   background-color: #f5f5f5;
-    //   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    //   margin-bottom: 16px;
-    // }
-
-    // .mat-expansion-panel-header {
-    //   background-color: #ccc;
-    //   padding: 16px;
-    //   display: flex;
-    //   justify-content: space-between;
-    //   align-items: center;
-    // }
-
     .mat-expansion-panel-header.mat-expanded {
       background-color: #999;
       color: #fff;
@@ -135,8 +122,6 @@
 
     // part2 accordion:
 
-    
-
     // accordion part3:
     .mat-expansion-panel {
       background-color: #f5f5f5;
@@ -162,6 +147,7 @@ background: linear-gradient(to left, #FFEB3B, #FFC107);
     }
 
     .mat-panel-title {
+      color: #f5f5f5;
       font-size: 18px;
       font-weight: 500;
     }

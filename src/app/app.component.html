@@ -16,8 +16,6 @@
       <i class="fab fa-whatsapp"></i>
     </a>
 
-    
-    
     <app-header></app-header>
     <div></div>
     <app-homebanner></app-homebanner>
@@ -60,18 +58,20 @@
     <script src="node_modules\lazysizes\lazysizes.min.js" async></script>
     <!-- tech: -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var slideContainer = document.querySelector(".mdb-logotypes .row");
-      var slideItem = document.querySelectorAll(".mdb-logotypes .col-lg-1");
-      var slideIndex = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        var slideContainer = document.querySelector(".mdb-logotypes .row");
+        var slideItem = document.querySelectorAll(".mdb-logotypes .col-lg-1");
+        var slideIndex = 0;
 
-      function slideNext() {
-        slideIndex++;
-        slideContainer.style.transform = `translateX(-${slideIndex * 33.33}%)`;
-      }
+        function slideNext() {
+          slideIndex++;
+          slideContainer.style.transform = `translateX(-${
+            slideIndex * 33.33
+          }%)`;
+        }
 
-      setInterval(slideNext, 3000);
-    });
-  </script>
+        setInterval(slideNext, 3000);
+      });
+    </script>
   </body>
 </html>

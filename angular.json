@@ -31,15 +31,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/static/plugin/bootstrap/css/bootstrap.min.css",
-              "src/static/plugin/font-awesome/css/all.min.css",
-              "src/static/plugin/et-line/style.css",
-              "src/static/plugin/themify-icons/themify-icons.css",
-              "src/static/plugin/owl-carousel/css/owl.carousel.min.css",
-              "src/static/plugin/magnific/magnific-popup.css",
-              "src/static/plugin/scroll/jquery.mCustomScrollbar.min.css",
-              "src/static/css/master.css",
-              "src/styles.css",
+              
+        
+              "src/assets/plugin/owl-carousel/css/owl.carousel.min.css",
+              "src/assets/plugin/magnific/magnific-popup.css",
+              "src/assets/plugin/scroll/jquery.mCustomScrollbar.min.css",
+              
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
